@@ -1,15 +1,19 @@
-export default function FeaturedCreators(){
-    return(
+import Image from "next/image"
+export default function FeaturedCreators() {
+    return (
         <section>
             <h2>Featured Creators</h2>
 
             <div>
                 <div className="bg-white rounded-xl shadow hover:shadow-md transition duration-220 overflow-hidden">
                     <div className="relative h-48 w-full">
-                        <img
-                            src="../../public/bil.jpg"
-                            alt="billie"
-                            />
+                        <Image
+                            src="/bil.png"
+                            alt="bil"
+                            width={100}
+                            height={100}
+                            className="w-full"
+                        />
                     </div>
                 </div>
 
