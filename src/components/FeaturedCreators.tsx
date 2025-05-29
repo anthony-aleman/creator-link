@@ -1,31 +1,32 @@
-import Image from "next/image"
-export default function FeaturedCreators(){
-    return(
-        <section className="py-10">
-        <h2 className="text-2xl font-bold text-center mb-6">Featured Creators</h2>
+import Image from "next/image";
 
-            <div>
-            <div className="bg-white h-screen text-center rounded-xl shadow hover:shadow-md transition duration-220 overflow-hidden">
-                    <div className="relative h-30 w-full">
-                    <Image
-                            src="/bil.png"
-                            alt="bil"
-                            width={100}
-                            height={100}
-                            className="w-full"                            />
-                    </div>
-                </div>
+export default function FeaturedCreators() {
+    return (
+        <section className="w-full py-12 bg-gray-50">
+            <h2 className="text-2xl font-bold text-center mb-10">Featured Creators</h2>
 
-                <div className="p-4">
-                    <h3 className="font-bold text-lg">name</h3>
-                    <p className="text-sm text-gray-600">niche</p>
-                    <p className="text-xs text-gray-400">location</p>
-                    <div className="mt-3 flex justify-between items-center">
-                        <span className="text-sm font-medium text-blue-600">rating</span>
-                        <button className="text-sm text-blue-500 hover:underline">view profile</button>
+            <div className="flex flex-wrap justify-center gap-6 px-4">
+                {[1, 2, 3].map((i) => (
+                    <div key={i} className="w-full max-w-sm bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                        <div className="relative w-full h-48">
+                            <Image
+                                src="/bil.png"
+                                alt="creator image"
+                                layout="fill"
+                                objectFit="cover"
+                                className="rounded-t-xl"
+                            />
+                        </div>
+                        <div className="p-4 text-left">
+                            <h3 className="font-bold text-lg">Jay Carter</h3>
+                            <p className="text-sm text-gray-600">Fitness & Wellness</p>
+                            <p className="text-xs text-gray-400">Los Angeles, CA</p>
+                            <p className="text-yellow-500">Rating: </p>
+                            <button className="text-blue-600 text-sm hover:underline mt-2">View Profile</button>
+                        </div>
                     </div>
-                </div>
+                ))}
             </div>
         </section>
-    )
+    );
 }

@@ -1,8 +1,7 @@
 import { NextPage } from 'next'
 
-interface Props { }
 
-const SearchBar: NextPage<Props> = ({ }) => {
+const SearchBar: NextPage = ({ }) => {
   return (
     <div className='max-w-xl mx-auto my-8'>
       <input
