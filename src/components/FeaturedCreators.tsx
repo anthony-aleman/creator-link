@@ -1,15 +1,18 @@
+import Image from "next/image"
 export default function FeaturedCreators(){
     return(
         <section className="py-10">
-            <h2 className="text-2xl font-bold text-center mb-6">Featured Creators</h2>
+        <h2 className="text-2xl font-bold text-center mb-6">Featured Creators</h2>
 
             <div>
-                <div className="bg-white h-screen text-center rounded-xl shadow hover:shadow-md transition duration-220 overflow-hidden">
+            <div className="bg-white h-screen text-center rounded-xl shadow hover:shadow-md transition duration-220 overflow-hidden">
                     <div className="relative h-30 w-full">
-                        <img
-                            src="/bil.jpg"
-                            alt="billie"
-                            />
+                    <Image
+                            src="/bil.png"
+                            alt="bil"
+                            width={100}
+                            height={100}
+                            className="w-full"                            />
                     </div>
                 </div>
 
