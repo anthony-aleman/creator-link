@@ -5,6 +5,6 @@ type ButtonProps = {
 
 export default function Button({ label }: ButtonProps) {
     return (
-        <button className="p-3 focus:border-sky-500 border-b-double rounded-xl shadow-sm hover:bg-red-400 "  >{label}</button>
+        <button className="p-3 focus:border-sky-500 border-b-double rounded-xl shadow-sm bg-white hover:bg-red-400 "  >{label}</button>
     )
 }

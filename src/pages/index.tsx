@@ -6,13 +6,13 @@ import Testimonials from "@/components/Testimonials";
 import ValueProps from "@/components/ValueProps";
 import FeaturedCreators from "@/components/FeaturedCreators";
 import CTASection from "@/components/CTASection";
+import HeroSectionProto from "@/components/HeroSectionProto";
 
 export default function Home() {
   return (
     <div>
       <Navbar/>
-      <HeroSection/>
-      <SearchBar/>
+      <HeroSectionProto/>
       <ValueProps/>
       <FeaturedCreators/>
       <Testimonials/>
